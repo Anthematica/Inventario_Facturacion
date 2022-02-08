@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Capa_Entidad
 {
-    public class Class1
+    public class Entidades
     {
+        public String usuario { get; set; }
+        public String password { get; set; }
     }
 }
