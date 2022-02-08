@@ -31,14 +31,13 @@ namespace Bebidas_Lorena
             //Validación de el password y el usuario 
             if (dt.Rows.Count > 0)
             { //Si encuentra una coincidencia
-                MessageBox.Show("Bienvenido " + dt.Rows[0][3].ToString(), "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bienvenido, " + dt.Rows[0][3].ToString(), "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 frmPrincipal.ShowDialog();
 
 
+                //Abrir el formulario principal si el usuario y contraseña son correctas
                 Login login = new Login();
-                //login.ShowDialog();
-
                 if (login.DialogResult == DialogResult.OK)
                     Application.Run(new Principal());
 
@@ -49,6 +48,8 @@ namespace Bebidas_Lorena
             }
             else {
                 MessageBox.Show("Usuario o Contraseña Incorrecta ", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtUsuario.Clear();
+                txtPassword.Clear();
             }
         }
         public Login()
