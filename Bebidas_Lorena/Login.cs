@@ -18,7 +18,7 @@ namespace Bebidas_Lorena
         Entidades objEntidad = new Entidades();
         Negocios objeNegocio = new Negocios();
 
-        Principal frmPrincipal = new Principal();
+        frmPrincipal frmPrincipal = new frmPrincipal();
 
         //Función de logueo
         void loginUsuarios() {
@@ -35,7 +35,7 @@ namespace Bebidas_Lorena
                 //Abrir el formulario principal si el usuario y contraseña son correctas
                 Login login = new Login();
                 if (login.DialogResult == DialogResult.OK)
-                    Application.Run(new Principal());
+                    Application.Run(new frmPrincipal());
 
                 //Limpiamos cajas de texto
                 txtUsuario.Clear();
