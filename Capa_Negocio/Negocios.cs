@@ -14,7 +14,7 @@ namespace Capa_Negocio
         Datos obj = new Datos();
 
         public DataTable NegocioUser(Entidades obje) {
-            return obj.DataUser(obje);
+            return obj.ValidateUser(obje);
         }
     }
 }

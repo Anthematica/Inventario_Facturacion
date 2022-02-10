@@ -45,7 +45,6 @@
             this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Inicio de sesión";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -64,7 +63,6 @@
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Usuario";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtUsuario
             // 
@@ -72,7 +70,6 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(131, 20);
             this.txtUsuario.TabIndex = 3;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtPassword
             // 
@@ -117,7 +114,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

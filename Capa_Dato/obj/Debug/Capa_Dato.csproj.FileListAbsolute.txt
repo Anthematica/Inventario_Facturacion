@@ -1,9 +1,0 @@
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\bin\Debug\Capa_Dato.dll
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\bin\Debug\Capa_Dato.pdb
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\bin\Debug\Capa_Entidad.dll
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\bin\Debug\Capa_Entidad.pdb
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\obj\Debug\Capa_Dato.csprojAssemblyReference.cache
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\obj\Debug\Capa_Dato.csproj.CoreCompileInputs.cache
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\obj\Debug\Capa_Dato.csproj.CopyComplete
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\obj\Debug\Capa_Dato.dll
-C:\Users\ANTHONY MORALES\Desktop\Inventario_Facturacion\Capa_Dato\obj\Debug\Capa_Dato.pdb

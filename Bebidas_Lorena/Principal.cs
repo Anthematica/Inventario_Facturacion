@@ -16,5 +16,11 @@ namespace Bebidas_Lorena
         {
             InitializeComponent();
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            pictureBox3.BringToFront();
+        }
+
     }
 }

@@ -63,6 +63,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +89,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Capa_Dato\Capa_Dato.csproj">
+      <Project>{382E7E6E-EF99-43FE-8EE6-118A9373F588}</Project>
+      <Name>Capa_Dato</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Capa_Entidad\Capa_Entidad.csproj">
       <Project>{97961dde-00ca-4659-93ae-b7a743315b60}</Project>
       <Name>Capa_Entidad</Name>
@@ -94,6 +101,9 @@
       <Project>{9df0afed-6849-4119-baa9-84c281403933}</Project>
       <Name>Capa_Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

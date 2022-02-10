@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Capa_Dato;
 using Capa_Entidad;
 using Capa_Negocio;
 
@@ -28,14 +28,10 @@ namespace Bebidas_Lorena
 
             dt = objeNegocio.NegocioUser(objEntidad);
 
-            //Validación de el password y el usuario 
+            //Validación de el password y el usuario
             if (dt.Rows.Count > 0)
             { //Si encuentra una coincidencia
-                MessageBox.Show("Bienvenido, " + dt.Rows[0][3].ToString(), "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 frmPrincipal.ShowDialog();
-
-
                 //Abrir el formulario principal si el usuario y contraseña son correctas
                 Login login = new Login();
                 if (login.DialogResult == DialogResult.OK)
@@ -46,7 +42,8 @@ namespace Bebidas_Lorena
                 txtPassword.Clear();
 
             }
-            else {
+            else
+            {
                 MessageBox.Show("Usuario o Contraseña Incorrecta ", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtUsuario.Clear();
                 txtPassword.Clear();
@@ -57,29 +54,9 @@ namespace Bebidas_Lorena
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             loginUsuarios();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
