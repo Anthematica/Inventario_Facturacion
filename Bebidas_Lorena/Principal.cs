@@ -35,8 +35,8 @@ namespace Bebidas_Lorena
             
             frmProductos frm = new frmProductos();
             frm.TopLevel = false;
-            this.panel5.Tag = frm;
-            this.panel5.Controls.Add(frm);
+            this.panel7.Tag = frm;
+            this.panel7.Controls.Add(frm);
             frm.Show();
 
         }
@@ -47,11 +47,43 @@ namespace Bebidas_Lorena
 
             frmClientes frm = new frmClientes();
             frm.TopLevel = false;
-            this.panel5.Tag = frm;
-            this.panel5.Controls.Add(frm);
+            this.panel7.Tag = frm;
+            this.panel7.Controls.Add(frm);
             frm.Show();
             //frm.Dock = fill;
 
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = false;
+
+
+            frmEmpleado frm = new frmEmpleado();
+            frm.TopLevel = false;
+            this.panel7.Tag = frm;
+            this.panel7.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = false;
+
+
+            frmProveedor frm = new frmProveedor();
+            frm.TopLevel = false;
+            this.panel7.Tag = frm;
+            this.panel7.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void btnhHome_Click(object sender, EventArgs e)
+        {
+            
+            /*this.panel7.Tag = pictureBox2;
+            this.panel7.Controls.Add(pictureBox2);  ES PARA VOLVER AL MENU PRINCIPAL, ESTA MAL CONFIGURADO
+            pictureBox2.Visible = true; */
         }
     }
 }

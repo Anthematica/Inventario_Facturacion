@@ -54,14 +54,14 @@ namespace Bebidas_Lorena
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            loginUsuarios();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            loginUsuarios();
         }
     }
 }
