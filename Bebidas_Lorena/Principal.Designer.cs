@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panelLineatxtUsuario = new System.Windows.Forms.Panel();
@@ -44,15 +43,17 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblNombreUsuario = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pbFotoUsuario = new System.Windows.Forms.PictureBox();
-            this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +72,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -79,18 +81,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1096, 836);
             this.panel3.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Bebidas_Lorena.Properties.Resources.coke;
-            this.pictureBox2.Location = new System.Drawing.Point(207, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(889, 836);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
             // 
             // panel4
             // 
@@ -175,6 +165,7 @@
             this.btnVentas.TabIndex = 12;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnCompras
             // 
@@ -284,6 +275,41 @@
             this.label1.Text = "Agencia Lorena";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblNombreUsuario
+            // 
+            this.lblNombreUsuario.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblNombreUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblNombreUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNombreUsuario.Location = new System.Drawing.Point(879, 0);
+            this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNombreUsuario.Name = "lblNombreUsuario";
+            this.lblNombreUsuario.Size = new System.Drawing.Size(192, 45);
+            this.lblNombreUsuario.TabIndex = 1;
+            this.lblNombreUsuario.Text = "Lorena Hernández";
+            this.lblNombreUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel5
+            // 
+            this.panel5.AutoScroll = true;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(207, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(889, 836);
+            this.panel5.TabIndex = 10;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Bebidas_Lorena.Properties.Resources.coke;
+            this.pictureBox2.Location = new System.Drawing.Point(207, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(889, 836);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Bebidas_Lorena.Properties.Resources.home;
@@ -305,20 +331,6 @@
             this.pbFotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFotoUsuario.TabIndex = 2;
             this.pbFotoUsuario.TabStop = false;
-            // 
-            // lblNombreUsuario
-            // 
-            this.lblNombreUsuario.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblNombreUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblNombreUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblNombreUsuario.Location = new System.Drawing.Point(879, 0);
-            this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblNombreUsuario.Name = "lblNombreUsuario";
-            this.lblNombreUsuario.Size = new System.Drawing.Size(192, 45);
-            this.lblNombreUsuario.TabIndex = 1;
-            this.lblNombreUsuario.Text = "Lorena Hernández";
-            this.lblNombreUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
@@ -346,9 +358,9 @@
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -378,5 +390,6 @@
         private System.Windows.Forms.Button btnCompras;
         private System.Windows.Forms.Panel panelLineatxtUsuario;
         private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel5;
     }
 }

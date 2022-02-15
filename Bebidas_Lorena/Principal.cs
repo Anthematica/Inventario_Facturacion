@@ -22,5 +22,14 @@ namespace Bebidas_Lorena
             pictureBox3.BringToFront();
         }
 
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = false;
+            FormFacturaVenta frm = new FormFacturaVenta();
+            frm.TopLevel = false;
+            this.panel5.Tag = frm;
+            this.panel5.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }
